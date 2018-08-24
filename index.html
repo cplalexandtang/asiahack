@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Acute</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+    </style>
+    <style type="text/css">
+        #headers {
+            background-color: #222;
+            padding: 20px;
+            color: white;
+        }
+        .container{
+            padding: 20px;
+        }
+        #floating-panel {
+            padding: 1em;
+            font-size: 1.25em;
+        }
+        #map-canvas {
+            width: 100%;
+            height: 600px;
+            /*padding: 1em;*/
+        }
+        div > div > ul {
+            list-style:none;
+            position:relative;
+            left:30%;
+        }
+        div > div > li {
+            float:left;
+            position:relative;
+            font-size: 2em;
+        }
+    </style>
+    <!--script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+  </head>
+
+  <body>
+    <div id="headers">
+        <header id="main-header">
+            <h1>Acute - Live Map Tracker</h1>
+        </header>
+        <div class="collapse navbar-collapse" id="navbar">           
+            <ul class="nav navbar-nav">
+                <li><a href="#home" class="js-target-scroll" style="color:white;">Home</a></li>
+                <li><a href="#services" class="js-target-scroll" style="color:white;">Services</a></li>
+                <li><a href="#portfolio" class="js-target-scroll" style="color:white;">Portfolio</a></li>
+                <li><a href="#pricing" class="js-target-scroll" style="color:white;">Pricing</a></li>
+                <li><a href="#team" class="js-target-scroll" style="color:white;">Team</a></li>
+                <li><a href="#testimonial" class="js-target-scroll" style="color:white;">Testimonial</a></li>
+                <li><a href="#blog" class="js-target-scroll" style="color:white;">Blog</a></li>
+                <li><a href="#contact" class="js-target-scroll" style="color:white;">Contact</a></li>
+                <li  class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown" style="color:white;"> page  </a>
+                    <ul class="dropdown-menu"> 
+                        <li><a href="#">List  Width</a></li>
+                        <li><a href="#">List  Sidebar</a></li>
+                        <li><a href="#">List  Sidebar</a></li>
+                        <li><a href="#">List Sidebar</a></li>
+                    </ul>
+                </li>
+            </ul>      
+        </div>
+    </div>
+    <div class="container">
+        <div id="map-canvas"></div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAhlO7uJrpuF5w4AY_f0rcqzng589Mnwhc&callback=initialize"></script>
+  </body>
+</html>
